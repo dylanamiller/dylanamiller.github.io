@@ -1,25 +1,25 @@
 <nav id="sidebar-icon-links">
   {% if site.github_url%}
-    <a id="github-link"
+    <a id="github_url"
        class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.hydeout.repo }}">
+       href="{{- site.github_url -}}">
       {% include svg/github.svg %}
     </a>
 
   {% if site.linkedin_url %}
-    <a id="search-link"
+    <a id="linkedin_url"
        class="icon{% if page.url == '/search' %} active{% endif %}"
        title="Search" aria-label="Search"
-       href="{{ search_page.url | relative_url }}">
+       href="{{- site.linkedin_url -}}">
       {% include svg/linkedin.svg %}
     </a>
   {% endif %}
 
   {% if site.email %}
-    <a id="search-link"
+    <a id="email"
        class="icon{% if page.url == '/search' %} active{% endif %}"
        title="Search" aria-label="Search"
-       href="{{ search_page.url | relative_url }}">
+       href="{{- site.email -}}">
       {% include svg/email.svg %}
     </a>
   {% endif %}
