@@ -8,8 +8,8 @@
 
   {% if site.linkedin_url %}
     <a id="linkedin_url"
-       class="icon{% if page.url == '/search' %} active{% endif %}"
-       title="Search" aria-label="Search"
+       class="icon"
+       aria-label="LinkedIn"
        href="{{- site.linkedin_url -}}">
       {% include svg/linkedin.svg %}
     </a>
@@ -17,8 +17,8 @@
 
   {% if site.email %}
     <a id="email"
-       class="icon{% if page.url == '/search' %} active{% endif %}"
-       title="Search" aria-label="Search"
+       class="icon"
+       aria-label="Email"
        href="{{- site.email -}}">
       {% include svg/email.svg %}
     </a>
