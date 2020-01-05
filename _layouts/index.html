@@ -40,6 +40,8 @@ layout: default
 
   {% include pagination-older.html %}
 
+  <!-- below this was added but not tested -->
+
   {{ content }}
 
   {% for post in paginator.posts %}
@@ -72,4 +74,6 @@ layout: default
     {% endif %}
   </article>
   {% endfor %}
+
+  <!-- above this was added but not tested -->
 </div>
