@@ -24,8 +24,8 @@ layout: default
 
     {% if post.excerpt %}
       {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
-      {% capture content_words %}
-        {{ post.exerpt | number_of_words }}
+      {% capture excerpt_words %}
+        {{ post.excerpt | number_of_words }}
       {% endcapture %}
       {% capture excerpt_words %}
         {{ post.excerpt | number_of_words }}
