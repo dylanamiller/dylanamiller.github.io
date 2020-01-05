@@ -14,7 +14,7 @@ Feel free to get in touch! I am open to talk about AI/ML/RL, literature, movies,
     <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
     <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
     <div class="12u$">
-      <textarea name="message" placeholder="Message"></textarea>
+      <textarea rows="40" cols="50" name="message" placeholder="Message"></textarea>
     </div>
     <div class="12u$">
       <input type="submit" value="Send Message" />
