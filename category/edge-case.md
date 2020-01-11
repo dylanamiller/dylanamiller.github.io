@@ -1,27 +1,7 @@
 ---
 layout: category
-title: Edge Case
+title: Extra Stuff
 ---
 
-Sample category page. You need to create a page for each category.
-The category is inferred from the title of the page, but you can also
-specify it with the `category` attribute in the front matter.
+I am still not sure what `Extra Stuff` is. <\br> I will probably link to cool resources here or something. <\br> I will get back to you on this...
 
-```md
----
-layout: category
-title: My Category
----
-```
-
-Or ...
-
-```md
----
-layout: category
-title: Fancy Title
-category: My Category
----
-```
-
-Posts get listed below here.
