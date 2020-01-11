@@ -60,7 +60,7 @@ All of this leads to an MDP that can now be illustrated as follows:
 
 The state comes from the environment to each the actor and the critic. The actor selects an action, transitions to a new state, and the reward is fed to the critic, which calculates the TD error and passes it to the actor.
 
-## ""Implementation""
+## **Implementation**
 
 Actor-critic methods were originally all on-policy algorithms, which means that the experience used to perform updates belongs to the policy that is being used to choose actions. This is in contrast to off-policy algorithms, where the experience does not have to be from the action choosing policy - this has to do with what the algorithm is directly trying to optimize for and how that effects the stationarity (I am well aware that this is likely not a word, but I like it and it gets my point across) of the of the parameter space. While this is beyond the scope of this post, I'll give a quick example, since I'm the one writing and I feel like it - plus it's Friday night and I have no date, so time is of no issue at the moment. 
 
