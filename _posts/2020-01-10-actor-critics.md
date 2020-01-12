@@ -39,6 +39,8 @@ At any rate, what the above description means practically, is that the agent cho
 
 ![](/assets/images/actor_critic/td_error.png "TD error")
 
+Where ![](/assets/images/actor_critic/gamma.png) is the discount factor.
+
 Note: the TD error that the critic uses is the TD error in the true definition. Q-learning uses an update that looks very similar, but with the action values rather than the state values. This is not the true TD error, though people often refer both as the TD error.
 
 Another Note: There are many algorithms that have an actor and a critic, but could be argued against being actor-critic algorithms. According to [Sutton and Barto](http://www.incompleteideas.net/book/bookdraft2017nov5.pdf) on page 274, in the first paragraph of the section "Actor-Critic Methods," it is stated that if the value function estimated by the critic is used only as a baseline (see [REINFORCE with baseline](https://dylanamiller.github.io/2019/12/25/policy-gradients.html)), and it is not used to enable bootstrapping, then it is not considered an actor-critic. 
@@ -51,6 +53,8 @@ and becomes part of its update. The resulting updates are:
 and
 
 ![](/assets/images/actor_critic/actor_update.png "Actor Update")
+
+Where ![](/assets/images/actor_critic/alpha.png) is the step size (i.e. learning rate).
 
 Though they look very similar, the behavior resulting from each is intuitively different. THe critic, updating based on the state value, moves toward the optimal value function, while the actor, even though it also uses the TD error, this can be seen as the TD error that is a funciton of the state and action, moving toward the optimal policy - unless of course it is not a PG actor, in which case it moves toward the optimal action value function. 
 
